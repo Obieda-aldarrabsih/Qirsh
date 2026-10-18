@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" fill="none">
+  <!-- Dark vault background with subtle grid pattern -->
+  <rect width="1280" height="320" fill="#0E1A17" />
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1" />
+    </pattern>
+    <radialGradient id="glow" cx="20%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#12715A" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0E1A17" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="320" fill="url(#grid)" />
+  <rect width="1280" height="320" fill="url(#glow)" />
+
+  <!-- Coin Mark Left (scaled up) -->
+  <g transform="translate(100, 80) scale(2.5)">
+    <circle cx="32" cy="32" r="27" fill="#12715A" />
+    <circle cx="32" cy="32" r="21.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.2" fill="none" />
+    <path d="M 27 22 C 27 26, 24 27.5, 22.5 30 C 22 31, 21 31.5, 21 32 C 21 32.5, 22 33, 22.5 34 C 24 36.5, 27 38, 27 42" 
+          stroke="#FFFFFF" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M 37 22 C 37 26, 40 27.5, 41.5 30 C 42 31, 43 31.5, 43 32 C 43 32.5, 42 33, 41.5 34 C 40 36.5, 37 38, 37 42" 
+          stroke="#FFFFFF" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="32" cy="32" r="3.6" fill="#C47335" />
+  </g>
+
+  <!-- Typography Right -->
+  <g transform="translate(320, 110)">
+    <text x="0" y="55" font-family="Inter, -apple-system, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-1.5">Qirsh</text>
+    <text x="210" y="55" font-family="'Noto Sans Arabic', Tahoma, sans-serif" font-size="52" font-weight="700" fill="#20B286">ﻗﺮش</text>
+    <text x="0" y="95" font-family="Inter, sans-serif" font-size="22" font-weight="500" fill="#E8F3EF" letter-spacing="0.5">Expense &amp; Budget Tracking REST API</text>
+    <text x="0" y="125" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="400" fill="#C47335">Every fils accounted for · Node.js · TypeScript · Fastify · PostgreSQL · Redis</text>
+  </g>
+
+  <!-- Subtle status badge top right -->
+  <g transform="translate(1030, 45)">
+    <rect width="170" height="36" rx="18" fill="#12715A" fill-opacity="0.2" stroke="#12715A" stroke-width="1.5" />
+    <circle cx="20" cy="18" r="5" fill="#20B286" />
+    <text x="35" y="23" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">REST API v1.0</text>
+  </g>
+</svg>
